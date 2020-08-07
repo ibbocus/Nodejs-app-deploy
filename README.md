@@ -3,7 +3,7 @@
 # Sparta App
 This app includes 2 pages
 - The home page showing a login page where existing users can login or new user can be click a link to create their loging
-- The fibonacci page giving you the number at a given position within the fibonacci sequence
+- The fibonacci page giving you the number at a given position within the fibonacci sequence 
 
 ## Getting Started
 
