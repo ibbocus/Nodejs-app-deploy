@@ -23,6 +23,8 @@
 
 
 # Installs the npm dependencies
+  export DB_HOST="mongodb://192.168.10.150:27017/posts"
+  # export DB_HOST="mongodb://52.212.156.251:27017/posts"
   sudo apt-get update
   cd /home/ubuntu/app
   sudo npm install
