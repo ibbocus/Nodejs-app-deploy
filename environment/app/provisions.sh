@@ -9,7 +9,7 @@
   curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
   sudo apt-get install -y nodejs
   sudo apt-get install npm -y
-
+  sudo npm install ejs, mongoose, express
 # Configuring nginx proxy
   IP=$(curl ifconfig.me)
 
