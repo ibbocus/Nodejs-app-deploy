@@ -10,6 +10,18 @@
   sudo apt-get install -y nodejs
   sudo apt-get install npm -y
 
+# Configuring nginx proxy
+  IP=$(curl ifconfig.me)
+
+
+  sudo unlink /etc/nginx/sites-enabled/default
+# remove the old file and add our one
+  sudo rm /etc/nginx/sites-available/default
+  sudo ln -s /home/ubuntu/environment/app/nginx.default /etc/nginx/sites-available/default
+  sudo service nginx restart
+
+
+
 # Installs the npm dependencies
   sudo apt-get update
   cd /home/ubuntu/app
