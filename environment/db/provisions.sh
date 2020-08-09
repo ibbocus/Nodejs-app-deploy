@@ -1,3 +1,4 @@
+#!bin/bash
 
 # be careful of these keys, they will go out of date
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv D68FA50FEA312927
@@ -12,7 +13,7 @@ sudo apt-get install -y mongodb-org=3.2.20 mongodb-org-server=3.2.20 mongodb-org
 # remoe the default .conf and replace with our configuration
 sudo rm /etc/mongod.conf
 sudo ln -s /home/ubuntu/environment/db/mongod.conf /etc/mongod.conf
-sudo DB_HOST="mongodb://localhost:27017/posts"
+
 # if mongo is is set up correctly these will be successful
 sudo systemctl restart mongod
 sudo systemctl enable mongod
