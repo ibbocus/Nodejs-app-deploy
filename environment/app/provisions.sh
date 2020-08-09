@@ -23,11 +23,11 @@
 
 
 # Installs the npm dependencies
-  export DB_HOST="mongodb://192.168.10.150:27017/posts"
-  # export DB_HOST="mongodb://52.212.156.251:27017/posts"
+  export DB_HOST=mongodb://ubuntu@54.154.53.144:27017/posts?authSource=admin
   sudo apt-get update
   cd /home/ubuntu/app
   sudo npm install
   sudo npm install pm2 -g
+  npm install
   pm2 stop all
   pm2 start app.js -f
