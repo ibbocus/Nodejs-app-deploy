@@ -1,4 +1,4 @@
-l#!/bin/bash
+#!/bin/bash
 
 # setting up
 
@@ -9,7 +9,7 @@ l#!/bin/bash
   curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
   sudo apt-get install -y nodejs
   sudo apt-get install npm -y
-  sudo npm install ejs, mongoose, express
+  sudo npm install mongoose, express
 # Configuring nginx proxy
   IP=$(curl ifconfig.me)
 
@@ -27,7 +27,7 @@ l#!/bin/bash
 
 
 # Installs the npm dependencies
-  export DB_HOST=mongodb://ubuntu@54.154.53.144:27017/posts?authSource=admin
+  export DB_HOST=mongodb://ubuntu@34.245.130.209:27017/posts?authSource=admin
   echo $DB_HOST
   sudo apt-get update
   cd /home/ubuntu/app

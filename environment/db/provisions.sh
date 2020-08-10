@@ -17,3 +17,4 @@ sudo ln -s /home/ubuntu/environment/db/mongod.conf /etc/mongod.conf
 # if mongo is is set up correctly these will be successful
 sudo systemctl restart mongod
 sudo systemctl enable mongod
+sudo systemctl start mongod
